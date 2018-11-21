@@ -1,0 +1,8 @@
+NODE_ENV="10.13.0"
+
+[environment]
+  CI = "true"
+
+[build]
+  command = "yarn build"
+  publish = "build"

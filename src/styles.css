@@ -1,0 +1,19 @@
+body.theme-test {
+  background-color: #135532; /* random */
+}
+
+body.theme-dark {
+  background-color: black;
+  color: white;
+}
+body.theme-dark #path .breadcrumb {
+  background-color: #222;
+}
+body.theme-dark #path .breadcrumb .active * {
+  color: #eef !important;
+}
+@media screen and (min-width: 996px) {
+  nav {
+    margin-top: 20px;
+  }
+}

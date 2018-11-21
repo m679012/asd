@@ -1,0 +1,22 @@
+image: node:latest
+
+variables:
+  CI: "true"
+
+before_script:
+  - yarn install --production --ignore-optional --non-interactive
+
+cache:
+  paths:
+    - node_modules/
+    - yarn.lock
+
+stages:
+  - test
+
+test:
+  stage: test
+  script:
+    - yarn test
+  only:
+    - pages
