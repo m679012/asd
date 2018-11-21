@@ -15,7 +15,7 @@ import './styles.css'
 import Root from './Root'
 
 // local imports
-import { register as serviceWorker } from './serviceWorker'
+import { unregister as serviceWorker } from './serviceWorker'
 
 // constants
 const reactApp = document.getElementById('reactApp')
